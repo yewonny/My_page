@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <input type ='button' id = 'btnclk' value="버튼">
+        <script>
+            function first(){
+                alert('첫번째 메시지');
+            }
+            btnclk.addEventListener('click', first);
+            btnclk.addEventListener('click', function(){
+                alert('두번째 메시지');
+            });
+            btnclk.removeEventListener('click', first);
+        </script>
+    </body>
+</html>
